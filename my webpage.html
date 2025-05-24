@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aqua;
+            padding: 15px 30px;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bolder; 
+            color: red;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+       }
+       .nav-dropdown {
+        position: relatives;
+       }
+       .nav-dropdown-content {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        background: white;
+        color: black;
+        min-width: 140px;
+        box-shadow: 0 2px 6px rgb(0,0,0,0.2);
+        z-index: 10;
+       }
+       .nav-dropdown-content a {
+        display: block;
+        padding: 10px;
+        color: orangered;
+        text-decoration: none;
+       }
+       .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+       }
+       .search-box input {
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: none;
+       }
+       .auth-buttons button {
+        margin-left: 10px;
+        padding: 6px 12px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+       }
+       .login-btn {
+        background-color: orangered;
+        color: white;
+       }
+       .signup-btn {
+        background-color: yellowgreen;
+        color: white;
+       }
+
+       /*  hero setion css */
+       .hero {
+            max-width: 1200px;
+            margin: 60px auto;
+            width: 90%;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+       }
+       .hero-text {
+            flex: 1;
+            min-width: 300px;
+       }
+       .hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 15px;
+       }
+       .hero-text h3 {
+            font-size: 24px;
+            color: #e7fa3b;
+            margin-bottom: 20px;
+       }
+       .hero-text p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #ee4c67;
+            margin-bottom: 30px;
+       }
+       .hero-buttons button {
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-right: 15px;
+       }
+       .btn-primary {
+            background-color: cyan;
+            color: black;
+            border: none;
+       }
+       .btn-primary:hover {
+            background-color: blue;
+       }
+       .btn-secondary {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #00e5ff;
+       }
+       .btn-secondary:hover {
+            background-color: cyan;
+            color: black;
+       }
+       .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 300px;
+       }
+       .hero-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #00e5ff;
+            box-shadow: 0 0 30px #00e5ff88;
+            object-fit: cover;
+       }
+
+       /* responsive design.. */
+       @media (max-width: 768px) {
+        .hero{
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .hero-buttons {
+            justify-content: center;
+        }
+        .hero-image img {
+            width: 220px;
+            height: 220px;
+        }
+       }
+       
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+     <nav class="navbar">
+        <div class="logo">SOIKOT's WEBSITE</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <div class="nav-dropdown">
+            <a href="#">Services▼</a>
+
+                <div class="nav-dropdown-content">
+                    <a href="#">SkillCourses</a>
+                    <a href="#">Jobprep</a>
+                    <a href="#">Admission</a>
+                </div>
+
+            <a href="#">Blog</a>
+            <a href="#">Contact</a> 
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="search..">
+            </div>
+
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign up</button>
+            </div>
+
+        </div>
+     </nav>
+
+    <!-- hero section -->
+
+    <section class="hero">
+        <div class="hero-text">
+        <h1>Hey I'm SOIKOT</h1>
+        <h3>I'm Font-end Designer and Font-end Develope aslo...</h3>
+        <p>I design the font of a web page and devlope the web page, And I devlope software also..</p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary">📨 Contact Me</button>
+                 <a style="text-decoration: none;" href="./tamplate.html" target="_blank"> <button class="btn-secondary">💼 View My Work</button></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="./soikot.jpeg" alt="">
+        </div>
+
+    </section>
+
+</body>
+</html>
