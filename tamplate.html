@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_template</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(./img/cover.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+         .hero{
+            max-width: 1200px;
+            margin: 60px auto;
+            width: 90%;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+         }
+         .hero-text{
+            flex: 1;
+            min-width: 300px;
+         }
+         .hero-text h1{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            color: cyan;
+            font-family: serif;
+         }
+         .hero-web form{
+            font-size: 24px;
+            color:black;
+            margin-bottom: 20px;
+            width: 50%;
+            padding: 20px;
+            background-color: cyan;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;         
+            font-size: 16px;
+         }
+        
+         .hero-buttons button{
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-right: 15px;
+            transition: all 0.3s ease;
+         }
+         .btn-primary{
+            background-color: transparent;
+            color: cyan;
+            border: 2px solid #43f34c;
+         }
+         .btn-primary:hover{
+            background-color: #424bef;
+            color:white;
+         }
+        
+         .hero-image{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 300px;
+         }
+         .hero-image img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid rgb(10, 184, 236);
+            box-shadow: 0 0 30px #00e5ff88;
+            object-fit: cover;
+         }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hey i'm SOIKOT</h1>
+
+            <div class="hero-web">
+                <form action="">I'm Web Designer and Web Developer  or Software developer aslo...I make this tamplate to using html and css</form>
+            </div>
+            
+            <div class="hero-buttons">
+                <button  class= "btn-primary">CONTACT ME</button>
+            </div>
+
+            
+        </div>
+       </section>
+</body>
+</html>
